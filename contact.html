@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Formula 1 Racing</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="drivers.html">Drivers</a>
+        <a href="teams.html">Teams</a>
+        <a href="contact.html" class="active">Contact</a> 
+    </nav>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to give feedback? Fill out the form below and we'll get back to you as soon as possible.</p>
+        <form action="mailto:azizzarra1320@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" size="30" maxlength="50" required>
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" cols="50" maxlength="500" required></textarea>
+      
+            <div class="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to our newsletter</label>
+            </div>
+      
+            <div class="rating">
+                <label for="rating1">Rate our site:</label><br>
+                <input type="radio" id="rating1" name="rating" value="1">
+                <label for="rating1">1</label>
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2">2</label>
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3">3</label>
+                <input type="radio" id="rating4" name="rating" value="4">
+                <label for="rating4">4</label>
+            </div>
+      
+            <div class="buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Formula 1 Racing</p>
+            <ul>
+                <li>Check Our Terms and Privacy </li>
+                <li><a href="https://account.formula1.com/#/en/privacy-policy">Privacy Policy</a></li>
+                <li><a href="https://account.formula1.com/#/en/terms-of-use">Terms of Service</a></li>
+                <li><a href="https://account.formula1.com/#/en/cookie-policy">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
